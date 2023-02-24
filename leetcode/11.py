@@ -6,9 +6,9 @@ class Solution:
         while (right-left>0) :
             max_area=max(max_area,(right-left)*min(height[left],height[right]))
                 
-            if height[left]>=height[right]: # The right is shorter than left
+            if height[left]>=height[right]: 
                 right-=1
-            else: # The left is shorter than right
+            else: 
                 left+=1
         return max_area
     

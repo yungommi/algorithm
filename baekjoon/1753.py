@@ -17,9 +17,6 @@ def dijkstra(start):
     distance[start] = 0 
     heapq.heappush(q,(0,start))
     while q:
-        # print(q)
-        # print(data)
-        # print(distance)
         dist, now_node = heapq.heappop(q)
         for n_n, weight in data[now_node]:
             cost = dist + weight

@@ -1,0 +1,8 @@
+# 예상 시간복잡도: O(1)
+
+def solution(a, b, flag):
+    if flag:
+        return a+b
+    else:
+        return a-b
+    

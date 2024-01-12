@@ -5,3 +5,4 @@ for new in cwr(range(11), 5):
   print(new[::-1])
   counter = Counter(new)
   print(counter)
+  

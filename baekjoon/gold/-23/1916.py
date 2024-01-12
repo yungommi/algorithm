@@ -47,3 +47,4 @@ def dijkstra(start):
 dijkstra(s)
 
 print(distance[e])
+

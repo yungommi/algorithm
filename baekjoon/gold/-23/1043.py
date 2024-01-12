@@ -19,3 +19,4 @@ for _ in range(m):
             trues |= p #bitwise operator a |= b => a = (a | b)
 
 print(sum(cnt))
+

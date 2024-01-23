@@ -8,3 +8,4 @@ for i in range(D+1):
         if i == s and e <= D and dis[i]+d < dis[e]:
             dis[e] = dis[i]+d
 print(dis[D])
+

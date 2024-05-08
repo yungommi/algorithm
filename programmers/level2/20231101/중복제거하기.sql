@@ -1,0 +1,3 @@
+-- 예상 시간복잡도: O(N)
+
+SELECT COUNT(DISTINCT NAME) count FROM ANIMAL_INS;

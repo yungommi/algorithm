@@ -1,0 +1,5 @@
+-- 예상 시간복잡도: O(logN)
+
+SELECT * FROM ANIMAL_INS 
+ORDER BY ANIMAL_ID;
+

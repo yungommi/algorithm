@@ -1,0 +1,6 @@
+# 예상 시간복잡도: O(nlogn)
+
+SELECT NAME, DATETIME FROM ANIMAL_INS 
+ORDER BY ANIMAL_ID desc; 
+
+

@@ -1,4 +1,4 @@
-#예상 시간복잡도 O(?) 
+#예상 시간복잡도 O(NlogN) 
 
 import sys
 input = sys.stdin.readline

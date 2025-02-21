@@ -1,14 +1,9 @@
 ## https://www.acmicpc.net/problem/13537
- #예상 시간복잡도 O(N(logN)^2) 
+#예상 시간복잡도 O(N(logN)^2) 
 
 import sys
 import math
-
 input = sys.stdin.readline
-"""
-1. 
-"""
-
 N = int(input())
 A = list(map(int, input().split()))
 M = int(input())

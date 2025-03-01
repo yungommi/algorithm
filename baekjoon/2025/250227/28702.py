@@ -1,25 +1,10 @@
-#예상 시간복잡도 O(1)
+#예상 시간복잡도 O(n) ? math.factorial의 시간복잡도?
 
 import sys
 input = sys.stdin.readline
+import math
 
-a = input().rstrip()
-b = input().rstrip()
-c = input().rstrip()
+A,B = map(int, input().split())
 
-if a.isdigit():
-    n = int(a)+3
-elif b.isdigit():
-    n = int(b)+2
-else:
-    n = int(c)+1
-
-if n % 3 == 0 :
-    if n % 5 == 0:
-        print("FizzBuzz")
-    else:
-        print("Fizz")
-elif n%5==0:
-    print("Buzz")
-else:
-    print(n)
+ans = math.factorial(A)//(math.factorial(B)*math.factorial((A-B)))
+print(ans)

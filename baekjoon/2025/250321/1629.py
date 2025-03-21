@@ -4,9 +4,15 @@ import sys
 input = sys.stdin.readline
 
 A,B,C = map(int, input().split())
-A = A% 12
-tmp = 1
-for _ in range(B):
-    tmp = (tmp * A) % C
+def function(a,b,c):
+    if b == 0 :
+        return 1 
+    if b % 2 == 0 :
+        tmp = function(a,b//2,c)
+        return (tmp ** 2) % c
+    else:
+        tmp = function(a,b//2,c)
+        tmp = tmp * tmp *  a 
+        return tmp % c
 
-print(tmp)
+print(function(A,B,C))

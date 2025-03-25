@@ -1,6 +1,5 @@
 #예상시간복잡도 : O(100000)
 
-
 import sys
 input = sys.stdin.readline
 from collections import deque

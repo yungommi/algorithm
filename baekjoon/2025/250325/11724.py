@@ -1,5 +1,3 @@
-#예상시간복잡도 : O(N+M)
-
 import sys
 input = sys.stdin.readline
 from collections import deque
@@ -26,4 +24,5 @@ for i in range(1,N+1):
               if k not in visited:
                     que.append(k)
                     visited.add(k)
+
 print(ans)

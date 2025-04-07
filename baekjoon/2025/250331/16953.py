@@ -18,7 +18,10 @@ def function(A,B):
 
 print(function(A,B))
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 
 
@@ -43,5 +46,9 @@ def solution(S,A):
 
     for i in range(N):
         ans[i]=dfs(i,'')
+<<<<<<< Updated upstream
+    return max(ans)
+>>>>>>> Stashed changes
+=======
     return max(ans)
 >>>>>>> Stashed changes

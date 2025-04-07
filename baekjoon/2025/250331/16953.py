@@ -17,3 +17,31 @@ def function(A,B):
     return -1 
 
 print(function(A,B))
+<<<<<<< Updated upstream
+=======
+
+
+
+
+def solution(S,A):
+    N=len(A)
+    dic = {i:[] for i in range(N)}
+    for i in range(1,N):
+        dic[i].append(A[i])
+        dic[A[i]].append(i)
+    ans = [0]*N 
+
+    def dfs (node,prev):
+        longest = 1 
+        for k in dic[node]:
+            if k == prev:
+                continue
+            if S[k]!=S[node]:
+                tmp = 1+dfs(k,S[node])
+                longest = max(longest,tmp)
+        return longest 
+
+    for i in range(N):
+        ans[i]=dfs(i,'')
+    return max(ans)
+>>>>>>> Stashed changes

@@ -6,18 +6,9 @@ int main(void)
     int cnt = 0 ; 
     int n; 
     cin >> n; 
-
-    for (int i=1; i<=n; i++)
+    for (long long power =5; power<=n; power*=5)
     {
-        if (i%5 == 0 )
-        {
-            cnt ++;
-            if (i%25==0)
-               cnt ++;
-            if (i%125==0)
-                cnt++;
-        }
+        cnt += n/power;
     }
-    cout << cnt;
-
+    cout << cnt; 
 }

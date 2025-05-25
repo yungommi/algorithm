@@ -1,4 +1,4 @@
-#예상시간복잡도 : O(N^ M)
+#예상시간복잡도 : O(nHm * m )
 import sys
 input = sys.stdin.readline
 

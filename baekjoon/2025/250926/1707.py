@@ -88,9 +88,8 @@ def function(G, V):
         elif visited[x]==k:
            pass
         else:
-            return "No"
-        
-  return "Yes"
+            return "NO"
+  return "YES"
 
 N = int(input())
 for _ in range(N):
